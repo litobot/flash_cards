@@ -1,31 +1,16 @@
 class Card
+    attr_reader :question,
+                :answer,
+                :category
 
-    class Turn
+    def initialize(question, answer, category)
+        @question = question
+        @answer = answer
+        @category = category
+    end
 
-        # Classes:
-        # Card
-        # --> Attributes:
-            # - question
-            # - answer
-            # - category
-        # Turn
-            # - card
-            # - guess
-            # - correct?
-            # - feedback
-        # Deck
-        # Round
-            # - deck
-            # - turns
-            # - current_card 
-            # - take_turn
-            # - class
-            # - correct?
-            # - number_correct
-            # - current_card
-            # - feedback
-            # - number_correct_by_category
-            # - percent_correct
-        
-        # Card_Generator
-        
+end
+
+
+
+
