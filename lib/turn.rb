@@ -12,6 +12,13 @@ class Turn
         def correct?
             @guess == card.answer #where is this .answer being called from?
         end 
+
+        def feedback
+            if guess.correct?
+                "Correct!"
+            else
+                "Incorrect."
+            end
 end
 
 
